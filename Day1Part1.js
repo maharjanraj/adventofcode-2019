@@ -1,7 +1,9 @@
-const data = `109067
-75007
-66030`;
+const input = require("./Day1Input");
 
-const result = data.split("\n").reduce((total, a) => {
+const result = input.split("\n").reduce((total, a) => {
   return Math.floor(a / 3) - 2 + total;
 }, 0);
+
+console.log(result);
+
+// Ans: 3330521
